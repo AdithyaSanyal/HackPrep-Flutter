@@ -16,6 +16,17 @@ class _LayoutColumnState extends State<LayoutColumn> {
       appBar: AppBar(
         title: Text('Column'),
       ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(color: Colors.red, height: 200, width: 200),
+            Container(color: Colors.yellow, height: 200, width: 200),
+            Container(color: Colors.green, height: 200, width: 200)
+          ],
+        ),
+      ),
     );
   }
 }
